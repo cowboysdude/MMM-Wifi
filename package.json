@@ -1,0 +1,23 @@
+{
+  "name": "mmm-wifi",
+  "version": "1.0.0",
+  "main": "MMM-Wifi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cowboysdude",
+  "license": "MIT",
+  "dependencies": {
+    "wifi-control": "^2.0.1"
+  },
+  "devDependencies": {},
+  "description": "Wifi module for MM2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowboysdude/MMM-Wifi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cowboysdude/MMM-Wifi/issues"
+  },
+  "homepage": "https://github.com/cowboysdude/MMM-Wifi#readme"
+}
