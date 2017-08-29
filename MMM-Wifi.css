@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Kavivanar');
+ .MMM-Wifi .wifi{
+  color: white; 
+  font-family: 'Arsenal';
+  font-size: .6em;
+}
+
+meter{
+  width:100px;
+}
+
+meter::after {
+ align-items: center;
+ content : attr(value);
+ top:-33px;
+ left:-50px;
+ color: #000;
+ font-weight: bold;
+ position:relative;
+}
