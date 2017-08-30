@@ -5,7 +5,7 @@
  *
  */
 const NodeHelper = require('node_helper');
-var WiFiControl = require('wifi-control');
+var wifi = require('node-wifi');
 
 
 module.exports = NodeHelper.create({
@@ -16,14 +16,17 @@ module.exports = NodeHelper.create({
 
     getWifi: function(url) {
     	var self = this;
-       WiFiControl.init({
-    debug: true
-  });
-   WiFiControl.scanForWiFi( function(err, response) {
-    if (err) console.log(err);
-    var result = response;
-    self.sendSocketNotification("WIFI_RESULT", result);
-  });
+    	wifi.init({
+    iface : null // network interface, choose a random wifi interface if set to null 
+    });
+    	wifi.scan(function(err, networks) {
+    if (err) {
+        console.log(err);
+    } else {
+       var result = networks;
+       self.sendSocketNotification("WIFI_RESULT", result);
+    }
+});
     },
 
     socketNotificationReceived: function(notification, payload) {
