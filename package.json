@@ -8,7 +8,7 @@
   "author": "cowboysdude",
   "license": "MIT",
   "dependencies": {
-    "wifi-control": "^2.0.1"
+    "node-wifi": "^1.2.5"
   },
   "devDependencies": {},
   "description": "Wifi module for MM2",
