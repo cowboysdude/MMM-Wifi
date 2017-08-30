@@ -40,7 +40,8 @@ Module.register("MMM-Wifi", {
     
     processWifi: function(data) {
         this.today = data.Today;
-        this.Wifi = data.networks;
+        this.Wifi = data;
+console.log(this.Wifi);
         this.loaded = true;
     },
     
