@@ -8,7 +8,8 @@
   "author": "cowboysdude",
   "license": "MIT",
   "dependencies": {
-    "node-wifi": "^1.2.5"
+    "node-wifi": "^1.2.5",
+    "wifi-triangulate": "^1.1.2"
   },
   "devDependencies": {},
   "description": "Wifi module for MM2",
