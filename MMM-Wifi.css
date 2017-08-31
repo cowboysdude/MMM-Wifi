@@ -3,18 +3,10 @@
   color: white; 
   font-family: 'Arsenal';
   font-size: .6em;
+  line-height: 130%;
 }
 
-meter{
-  width:100px;
-}
 
-meter::after {
- align-items: center;
- content : attr(value);
- top:-33px;
- left:-50px;
- color: #000;
- font-weight: bold;
- position:relative;
+ul li {
+	list-style-type: none;
 }
