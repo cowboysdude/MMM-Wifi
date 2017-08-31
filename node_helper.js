@@ -6,8 +6,8 @@
  */
 const NodeHelper = require('node_helper');
 var wifi = require('node-wifi');
-const scanner = require('node-wifi-scanner');
-var wifiScanner = require('node-wifiscanner')
+//const scanner = require('node-wifi-scanner');
+//var wifiScanner = require('node-wifiscanner')
 
 module.exports = NodeHelper.create({
 
