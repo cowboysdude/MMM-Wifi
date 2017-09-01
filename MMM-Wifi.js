@@ -63,6 +63,8 @@ console.log(this.Wifi);
     start: function() {
         Log.info("Starting module: " + this.name);
          this.Wifi = {};
+console.log(this.Wifi);
+
          this.activeItem = 0;
          this.rotateInterval = null;
          this.updateInterval = null;
@@ -86,6 +88,11 @@ console.log(this.Wifi);
 		SSid.innerHTML = "Network: <font color=#7cf6be>"+this.Wifi[i].ssid+"</font>";
 		wrapper.appendChild(SSid);
 		
+		var Sec = document.createElement("div");
+		Sec.classList.add("wifi");
+		Sec.innerHTML = "Security: <font color=#7cf6be>"+this.Wifi[i].security+"</font>";
+		wrapper.appendChild(Sec);
+		
 		var Mac = document.createElement("div");
 		Mac.classList.add("wifi");
 		Mac.innerHTML = "MAC: <font color=#7cf6be>"+this.Wifi[i].mac+"</font>";
@@ -98,7 +105,7 @@ console.log(this.Wifi);
 		
 		var Channel = document.createElement("div");
 		Channel.classList.add("wifi");
-		Channel.innerHTML = "Channel <font color=#fff4b7>"+this.Wifi[i].channel+"<font>";
+		Channel.innerHTML = "Frequency: <font color=#fff4b7>"+this.Wifi[i].frequency+"<font>";
 		wrapper.appendChild(Channel);
 	} 
 	}
@@ -116,6 +123,11 @@ console.log(this.Wifi);
 		SSid.innerHTML = "Network: <font color=#7cf6be>"+Wifi.ssid+"</font>";
 		wrapper.appendChild(SSid);
 		
+		var Sec = document.createElement("div");
+		Sec.classList.add("wifi");
+		Sec.innerHTML = "Security: <font color=#7cf6be>"+Wifi.security+"</font>";
+		wrapper.appendChild(Sec);
+		
 		var Mac = document.createElement("div");
 		Mac.classList.add("wifi");
 		Mac.innerHTML = "MAC: <font color=#7cf6be>"+Wifi.mac+"</font>";
@@ -128,7 +140,7 @@ console.log(this.Wifi);
 		
 		var Channel = document.createElement("div");
 		Channel.classList.add("wifi");
-		Channel.innerHTML = "Channel <font color=#fff4b7>"+Wifi.channel+"<font>";
+		Channel.innerHTML = "Frequency:  <font color=#fff4b7>"+Wifi.frequency+"<font>";
 		wrapper.appendChild(Channel);	
 		}
 			}	
